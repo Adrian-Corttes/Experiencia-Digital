@@ -76,12 +76,18 @@ font-family: 'Roboto', sans-serif;
 .hero__main{
    height: calc(100vh - 70px);
    display: flex;
+   justify-content: space-between;
    align-items: center;
    padding: 0;
 }
 .mockup{
    object-fit: cover;
-   height: calc(100vh - 70px)
+   width: 48%;
+   min-height: 90%;
+}
+
+.hero__textos{
+   width: 48%;
 }
 
 .title{
@@ -114,4 +120,100 @@ font-family: 'Roboto', sans-serif;
    font-weight: 700;
    box-shadow: var(--shadow) var(--color_shadow);
    border-radius: 6px;
+}
+
+/*SERVICES*/
+.services{
+   background: #fafafa;
+}
+
+.subtitle{
+   font-size: 42px;
+}
+
+.subtitle--modifier{
+   text-align: center;
+   margin-bottom: 16px;
+}
+
+.copy__section{
+   color: var(--black2);
+   font-size: 22px;
+   line-height: 32px;
+   margin-bottom: 60px;
+}
+
+.copy__section--modifier{
+   text-align: center;
+}
+
+/*card*/
+.container-card{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.card{
+   width: 30%;
+   padding: 30px 0;
+   overflow: hidden;
+   background: linear-gradient(180deg, #30353B 0%, #1A1A1F 100%);
+   border-radius: 10px;
+   position: relative;
+   text-align: right;
+   margin-bottom: 60px;
+   box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.card__img{
+   text-align: left;
+   width: 95%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px 0 0 10px;
+}
+
+.cards__text{
+   text-align: left;
+   width: 90%;
+   margin: 0 auto;
+}
+
+.card__list{
+   color: var(--gold2);
+   font-weight: 700;
+   margin: 25px 0 12px;
+   font-size: 18px;
+}
+
+.card__title{
+   font-size: 40px;
+   color: #fff;
+   margin-bottom: 8px;
+}
+
+.card__copy{
+   color: var(--gray2);
+   margin-bottom: 16px;
+}
+
+.card__botton{
+   display: block;
+   background: linear-gradient(180deg,#F7CE90 0%,#F4BD76 100%);
+   border-radius: 6px;
+   text-decoration: none;
+   width: 100%;
+   color: var(--black1);
+   font-weight: 700;
+   text-align: center;
+   padding: 12px 0;
+}
+
+.card__date{
+   color: var(--gold2);
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 16px;
 }
